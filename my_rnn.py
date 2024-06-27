@@ -224,7 +224,7 @@ def plot_training_history(history, filename):
     # Plot the training and validation loss
     plt.figure(figsize=(10, 6))
     plt.plot(epochs, loss, 'b', label='Training Loss')
-    # plt.plot(epochs, val_loss, 'r', label='Validation Loss')
+    plt.plot(epochs, val_loss, 'r', label='Validation Loss')
     plt.title('Training and Validation Loss')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
